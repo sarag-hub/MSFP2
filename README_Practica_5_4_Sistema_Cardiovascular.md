@@ -49,7 +49,7 @@ El sistema se representa mediante una analogía eléctrica que contiene una impe
 
 La práctica tiene como propósito modelar y analizar el comportamiento dinámico del sistema cardiovascular mediante el **modelo Windkessel de cuatro elementos**. Este modelo concentra propiedades hemodinámicas relevantes en cuatro parámetros: impedancia característica $Z$, distensibilidad arterial $C$, resistencia periférica $R$ e inertancia arterial $L$. La analogía eléctrica permite formular ecuaciones diferenciales y una función de transferencia para estudiar la presión $P_p(t)$ sobre la distensibilidad arterial a partir de la presión de entrada $P_a(t)$.
 
-Se comparan los parámetros proporcionados para un paciente hipotenso, un individuo normotenso y un paciente hipertenso. La respuesta se estudia en el intervalo de \(0\text{–}15\ \mathrm{s}\) utilizando una entrada aleatoria uniforme en Simulink. Posteriormente se analiza el sistema en lazo abierto, se diseña un controlador PID mediante la herramienta **Tune** de Simulink y se contrastan los resultados computacionales en MATLAB/Simulink, Python y Multisim.
+Se comparan los parámetros proporcionados para un paciente hipotenso, un individuo normotenso y un paciente hipertenso. La respuesta se estudia en el intervalo de $0\text{–}15\ \mathrm{s}$ utilizando una entrada aleatoria uniforme en Simulink. Posteriormente se analiza el sistema en lazo abierto, se diseña un controlador PID mediante la herramienta **Tune** de Simulink y se contrastan los resultados computacionales en MATLAB/Simulink, Python y Multisim.
 
 La práctica también requiere elaborar un diagrama biológico del sistema cardiovascular en BioRender y discutir cómo los cambios de los parámetros del modelo modifican la respuesta hemodinámica. Los resultados simulados deben distinguirse de las mediciones experimentales y de cualquier modificación realizada por el estudiante.
 
@@ -73,7 +73,7 @@ Modelar y analizar el sistema cardiovascular mediante el modelo Windkessel de cu
 ### Objetivos específicos
 
 - Identificar la correspondencia entre las variables hemodinámicas y los elementos eléctricos $Z$, $L$, $R$ y $C$.
-- Obtener las ecuaciones diferenciales y la función de transferencia que relacionan \(P_a(t)\) con \(P_p(t)\).
+- Obtener las ecuaciones diferenciales y la función de transferencia que relacionan $P_a(t)$ con $P_p(t).
 - Determinar los polos, la estabilidad y el error en estado estacionario de la planta.
 - Comparar las respuestas correspondientes a hipotensión, normotensión e hipertensión con los parámetros de la práctica.
 - Generar la entrada aleatoria uniforme con la configuración especificada en el instructivo.
