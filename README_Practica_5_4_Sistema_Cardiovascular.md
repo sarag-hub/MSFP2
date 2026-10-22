@@ -174,84 +174,84 @@ $$
 
 Las relaciones constitutivas de los elementos son:
 
-\[
+$$
 F_R(t)=\frac{P_p(t)}{R}
-\]
+$$
 
-\[
+$$
 F_C(t)=C\frac{dP_p(t)}{dt}
-\]
+$$
 
 Por lo tanto,
 
-\[
+$$
 \boxed{F_L(t)=\frac{P_p(t)}{R}
 +C\frac{dP_p(t)}{dt}}
-\]
+$$
 
 La ley de voltajes para la impedancia característica \(Z\), la inertancia \(L\) y la presión de salida es:
 
-\[
+$$
 \boxed{P_a(t)=Z F_L(t)+L\frac{dF_L(t)}{dt}+P_p(t)}
-\]
+$$
 
-Estas ecuaciones describen el comportamiento del circuito Windkessel de cuatro elementos, con \(P_a(t)\) como entrada y \(P_p(t)\) como salida.
+Estas ecuaciones describen el comportamiento del circuito Windkessel de cuatro elementos, con $P_a(t)$ como entrada y $P_p(t)$ como salida.
 
 ### 2. Función de transferencia
 
 Con condiciones iniciales nulas, la transformada de Laplace de la ecuación de la rama paralela es:
 
-\[
+$$
 F_L(s)=\left(Cs+\frac{1}{R}\right)P_p(s)
-\]
+$$
 
 La ecuación de entrada queda:
 
-\[
+$$
 P_a(s)=(Z+Ls)F_L(s)+P_p(s)
-\]
+$$
 
-Sustituyendo \(F_L(s)\):
+Sustituyendo $F_L(s)$:
 
-\[
+$$
 P_a(s)=\left[(Z+Ls)\left(Cs+\frac{1}{R}\right)+1\right]P_p(s)
-\]
+$$
 
 Por tanto, la función de transferencia entre la presión de salida y la presión de entrada es:
 
-\[
+$$
 \boxed{
 G(s)=\frac{P_p(s)}{P_a(s)}
 =\frac{R}{LRCs^2+(L+ZRC)s+(Z+R)}
 }
-\]
+$$
 
-La función es de segundo orden porque el modelo contiene dos elementos dinámicos independientes: la inertancia \(L\) y la distensibilidad \(C\).
+La función es de segundo orden porque el modelo contiene dos elementos dinámicos independientes: la inertancia $L$ y la distensibilidad $C$.
 
 ### 3. Representación mediante ecuaciones diferenciales de primer orden
 
 Tomando como variables de estado:
 
-\[
+$$
 x_1(t)=P_p(t),\qquad x_2(t)=F_L(t)
-\]
+$$
 
 se obtiene:
 
-\[
+$$
 \boxed{\dot{x}_1(t)=\frac{1}{C}
 \left(x_2(t)-\frac{x_1(t)}{R}\right)}
-\]
+$$
 
-\[
+$$
 \boxed{\dot{x}_2(t)=\frac{P_a(t)-Zx_2(t)-x_1(t)}{L}}
-\]
+$$
 
 y la salida es:
 
-\[
+$$
 \boxed{y(t)=x_1(t)=P_p(t)}
-\]
+$$
 
 Estas ecuaciones pueden implementarse en un subsistema de Simulink mediante bloques de suma, ganancias e integradores.
 
@@ -288,24 +288,24 @@ Se deben repetir los cálculos para los escenarios hipotenso e hipertenso cambia
 
 ### 1. Error en estado estacionario
 
-La ganancia estática se obtiene evaluando la función de transferencia en \(s=0\):
+La ganancia estática se obtiene evaluando la función de transferencia en $s=0$:
 
-\[
+$$
 \boxed{G(0)=\frac{R}{Z+R}}
-\]
+$$
 
-Para una entrada escalón de amplitud \(A\), si el sistema es estable:
+Para una entrada escalón de amplitud $A$, si el sistema es estable:
 
-\[
+$$
 \lim_{t\to\infty}P_p(t)=A\frac{R}{Z+R}
-\]
+$$
 
-El error entre la entrada y la salida, definido como \(e(t)=P_a(t)-P_p(t)\), es:
+El error entre la entrada y la salida, definido como $e(t)=P_a(t)-P_p(t)$, es:
 
-\[
+$$
 \boxed{e_{ss}=A\left(1-\frac{R}{Z+R}\right)
 =A\frac{Z}{Z+R}}
-\]
+$$
 
 Por tanto, la salida no alcanza exactamente la entrada en estado estacionario cuando \(Z>0\). Este resultado corresponde a una entrada escalón y a la función de transferencia definida en esta práctica.
 
@@ -313,22 +313,22 @@ Por tanto, la salida no alcanza exactamente la entrada en estado estacionario cu
 
 Los polos se obtienen de las raíces del denominador:
 
-\[
+$$
 LRCs^2+(L+ZRC)s+(Z+R)=0
-\]
+$$
 
 Por la fórmula general:
 
-\[
+$$
 \boxed{
 s_{1,2}=
 \frac{-(L+ZRC)\pm
 \sqrt{(L+ZRC)^2-4LRC(Z+R)}}
 {2LRC}
 }
-\]
+$$
 
-Para parámetros positivos \(Z,R,L,C>0\), los coeficientes del polinomio característico son positivos. Para un sistema continuo de segundo orden, esto implica polos con parte real negativa y, por tanto, estabilidad asintótica.
+Para parámetros positivos $Z,R,L,C>0$, los coeficientes del polinomio característico son positivos. Para un sistema continuo de segundo orden, esto implica polos con parte real negativa y, por tanto, estabilidad asintótica.
 
 Debe calcularse el discriminante para cada escenario y verificar si los polos son reales o complejos. La estabilidad no debe decidirse solo a partir de la apariencia de las gráficas: se deben reportar los polos obtenidos numéricamente.
 
@@ -336,11 +336,11 @@ Debe calcularse el discriminante para cada escenario y verificar si los polos so
 
 Para cada uno de los tres conjuntos de parámetros:
 
-1. Construir \(G(s)\).
+1. Construir $G(s)$.
 2. Calcular los polos y la ganancia estática.
 3. Simular la respuesta con la misma señal de entrada.
 4. Comparar amplitud, transitorio, valor medio y rapidez de respuesta.
-5. Relacionar las diferencias con los cambios simultáneos de \(Z\), \(R\), \(C\) y \(L\).
+5. Relacionar las diferencias con los cambios simultáneos de $Z$, $R$, $C$ y $L$.
 
 [Volver al contenido](#contenido)
 
@@ -353,15 +353,15 @@ El instructivo solicita una entrada de tipo **Uniform Random Number** en Simulin
 
 | Parámetro | Configuración |
 |---|---:|
-| Minimum | \(0.2\ \mathrm{V}\) |
-| Maximum | \(1\ \mathrm{V}\) |
-| Seed | \(106\) |
-| Sample time | \(0.5\ \mathrm{s}\) |
-| Intervalo de simulación | \(0\) a \(15\ \mathrm{s}\) |
+| Minimum | $0.2\ \mathrm{V}$ |
+| Maximum | $1\ \mathrm{V}$ |
+| Seed | $106$ |
+| Sample time | $0.5\ \mathrm{s}$ |
+| Intervalo de simulación | $0\) a \(15\ \mathrm{s}$ |
 
-La entrada aleatoria permite observar cómo responde la presión \(P_p(t)\) ante una señal variable. Para comparar los tres escenarios, se recomienda conservar la misma configuración de entrada y documentar la semilla utilizada.
+La entrada aleatoria permite observar cómo responde la presión $P_p(t)$ ante una señal variable. Para comparar los tres escenarios, se recomienda conservar la misma configuración de entrada y documentar la semilla utilizada.
 
-**Importante:** el tiempo de muestreo de \(0.5\ \mathrm{s}\) es la configuración indicada para el bloque de entrada aleatoria; no equivale necesariamente al paso del solver de todo el modelo. El solver y sus opciones deben configurarse de forma consistente con la dinámica de la planta.
+**Importante:** el tiempo de muestreo de $0.5\ \mathrm{s}$ es la configuración indicada para el bloque de entrada aleatoria; no equivale necesariamente al paso del solver de todo el modelo. El solver y sus opciones deben configurarse de forma consistente con la dinámica de la planta.
 
 [Volver al contenido](#contenido)
 
@@ -376,7 +376,7 @@ La práctica requiere representar el sistema cardiovascular mediante dos impleme
 |---|---|---|
 | Ecuaciones diferenciales, Simulink | Subsistema con las ecuaciones de estado, integradores y ganancias | Consistencia con las ecuaciones del modelo |
 | Función de transferencia, Simulink | Bloque **Transfer Fcn** con el numerador y denominador calculados | Concordancia entre la respuesta del bloque y la del subsistema |
-| Circuito eléctrico, Multisim | Implementación de la analogía con \(Z\), \(L\), \(R\) y \(C\) | Comparación de la respuesta eléctrica con las simulaciones matemáticas |
+| Circuito eléctrico, Multisim | Implementación de la analogía con $Z$, $L$, $R$ y $C$ | Comparación de la respuesta eléctrica con las simulaciones matemáticas |
 
 ### Coeficientes para el bloque Transfer Fcn
 
@@ -385,11 +385,11 @@ Para cada escenario, el bloque debe configurarse con:
 - **Numerator:** `[R]`
 - **Denominator:** `[L*R*C, L + Z*R*C, Z + R]`
 
-Se pueden calcular previamente los coeficientes en MATLAB y asignarlos al bloque. Se debe verificar que el orden de los coeficientes coincida con las potencias descendentes de \(s\).
+Se pueden calcular previamente los coeficientes en MATLAB y asignarlos al bloque. Se debe verificar que el orden de los coeficientes coincida con las potencias descendentes de $s$.
 
 ### Comparación de escenarios
 
-Los escenarios hipotenso, normotenso e hipertenso se deben simular por separado, actualizando \(Z\), \(C\), \(R\) y \(L\). En las figuras se recomienda identificar claramente el escenario, la señal de entrada y la presión de salida.
+Los escenarios hipotenso, normotenso e hipertenso se deben simular por separado, actualizando $Z$, $C$, $R$ y $L$. En las figuras se recomienda identificar claramente el escenario, la señal de entrada y la presión de salida.
 
 [Volver al contenido](#contenido)
 
@@ -402,28 +402,28 @@ Los escenarios hipotenso, normotenso e hipertenso se deben simular por separado,
 
 El instructivo plantea un diagrama de bloques en el que la respuesta de un individuo sano o normotenso sirve como referencia para formular un protocolo de tratamiento para un paciente. En la representación de control, el error se calcula como la diferencia entre la referencia y la salida del caso:
 
-\[
+$$
 e(t)=r(t)-P_{p,\mathrm{caso}}(t)
-\]
+$$
 
 El controlador PID genera una señal de control a partir del error:
 
-\[
+$$
 u(t)=k_Pe(t)+k_I\int_0^t e(\tau)\,d\tau
 +k_D\frac{de(t)}{dt}
-\]
+$$
 
 En el dominio de Laplace, para el PID ideal:
 
-\[
+$$
 K(s)=k_P+\frac{k_I}{s}+k_Ds
-\]
+$$
 
 Si se utiliza retroalimentación negativa unitaria sobre una planta \(G(s)\), la función de transferencia de lazo cerrado es:
 
-\[
+$$
 \boxed{T(s)=\frac{K(s)G(s)}{1+K(s)G(s)}}
-\]
+$$
 
 La implementación exacta debe respetar el diagrama de bloques del instructivo y la forma en que se conectan la referencia, el controlador y el modelo del paciente. No debe suponerse que una conexión de retroalimentación unitaria representa por sí sola todo el protocolo de tratamiento descrito en la práctica.
 
@@ -431,7 +431,7 @@ La implementación exacta debe respetar el diagrama de bloques del instructivo y
 
 1. Construir el diagrama de bloques indicado en la Figura 5.8 del instructivo.
 2. Insertar el bloque **PID Controller** en la ubicación indicada.
-3. Abrir la herramienta **Tune** y sintonizar \(k_P\), \(k_I\) y \(k_D\).
+3. Abrir la herramienta **Tune** y sintonizar $k_P$, $k_I$ y $k_D$.
 4. Registrar las ganancias y los ajustes del controlador.
 5. Comparar la respuesta del caso con la referencia normotensa antes y después del control.
 6. Documentar las diferencias entre la respuesta en lazo abierto y la respuesta controlada.
@@ -449,11 +449,11 @@ Python permite contrastar la respuesta de la planta con los resultados obtenidos
 
 El programa debe incluir, como mínimo:
 
-1. Definición de \(Z\), \(C\), \(R\) y \(L\) para cada escenario.
+1. Definición de $Z$, $C$, $R$ y $L$ para cada escenario.
 2. Construcción de la función de transferencia.
 3. Cálculo de polos y ganancia estática.
 4. Generación o importación de la misma señal de entrada aleatoria.
-5. Simulación de la respuesta \(P_p(t)\) en el intervalo de \(0\) a \(15\ \mathrm{s}\).
+5. Simulación de la respuesta $P_p(t)$ en el intervalo de $0\) a \(15\ \mathrm{s}$.
 6. Implementación del controlador PID, usando las ganancias obtenidas con Tune.
 7. Generación de gráficas comparativas y almacenamiento de los resultados.
 
@@ -473,11 +473,11 @@ La práctica solicita elaborar un diagrama biológico del sistema cardiovascular
 Se recomienda incluir:
 
 - Corazón como fuente de presión y flujo sanguíneo.
-- Aorta y arterias proximales, asociadas conceptualmente con la impedancia característica \(Z\).
-- Propiedades elásticas de las arterias, asociadas con la distensibilidad \(C\).
-- Lecho vascular periférico, asociado con la resistencia \(R\).
-- Inercia del flujo sanguíneo, representada por \(L\).
-- Flechas que indiquen el sentido del flujo y etiquetas para \(P_a(t)\) y \(P_p(t)\).
+- Aorta y arterias proximales, asociadas conceptualmente con la impedancia característica $Z$.
+- Propiedades elásticas de las arterias, asociadas con la distensibilidad $C$.
+- Lecho vascular periférico, asociado con la resistencia $R$.
+- Inercia del flujo sanguíneo, representada por $L$.
+- Flechas que indiquen el sentido del flujo y etiquetas para $P_a(t)$ y $P_p(t)$.
 - Una leyenda que distinga el escenario hipotenso, normotenso e hipertenso.
 
 El diagrama biológico es una representación explicativa, no una medición anatómica directa de los parámetros eléctricos. Debe mantener correspondencia con las definiciones y la topología del modelo matemático.
@@ -505,7 +505,7 @@ La comparación debe realizarse con las mismas condiciones de entrada y los par�
 
 - Concordancia entre el subsistema de ecuaciones y el bloque **Transfer Fcn**.
 - Diferencias entre las respuestas hipotensa, normotensa e hipertensa.
-- Efecto de los cambios de \(Z\), \(R\), \(C\) y \(L\) en la ganancia estática y la dinámica.
+- Efecto de los cambios de $Z$, $R$, $C$ y $L$ en la ganancia estática y la dinámica.
 - Estabilidad del sistema a partir de sus polos.
 - Diferencia entre entrada y salida en estado estacionario.
 - Efecto del controlador PID en el seguimiento de la referencia.
@@ -557,9 +557,9 @@ El procedimiento combina formulación matemática, simulación computacional, an
 
 ### Etapa 1. Modelo y análisis matemático
 
-- [ ] Identificar \(P_a(t)\), \(P_p(t)\), \(F_L(t)\), \(Z\), \(R\), \(C\) y \(L\).
+- [ ] Identificar $P_a(t)$, $P_p(t)$, $F_L(t)$, $Z$, $R$, $C$ y $L$.
 - [ ] Formular las ecuaciones integro-diferenciales o diferenciales del circuito.
-- [ ] Obtener la función de transferencia \(P_p(s)/P_a(s)\).
+- [ ] Obtener la función de transferencia $P_p(s)/P_a(s)$.
 - [ ] Calcular los polos y la ganancia estática.
 - [ ] Determinar el error en estado estacionario para una entrada escalón.
 - [ ] Repetir el análisis para los escenarios hipotenso, normotenso e hipertenso.
@@ -569,7 +569,7 @@ El procedimiento combina formulación matemática, simulación computacional, an
 - [ ] Construir el modelo mediante ecuaciones en un subsistema de Simulink.
 - [ ] Construir el modelo mediante el bloque **Transfer Fcn**.
 - [ ] Configurar la entrada aleatoria con los valores del instructivo.
-- [ ] Simular entre \(0\) y \(15\ \mathrm{s}\).
+- [ ] Simular entre $0$ y $15\ \mathrm{s}$.
 - [ ] Comparar los tres escenarios fisiológicos.
 - [ ] Verificar la concordancia entre ambas representaciones.
 
@@ -577,7 +577,7 @@ El procedimiento combina formulación matemática, simulación computacional, an
 
 - [ ] Construir el diagrama de bloques correspondiente a la Figura 5.8.
 - [ ] Diseñar y sintonizar el PID mediante **Tune**.
-- [ ] Registrar \(k_P\), \(k_I\) y \(k_D\).
+- [ ] Registrar $k_P$, $k_I$ y $k_D$.
 - [ ] Comparar la respuesta del caso con la referencia y con la respuesta controlada.
 - [ ] Reproducir la respuesta en Python usando la misma entrada.
 - [ ] Implementar o verificar el circuito en Multisim, según el procedimiento indicado.
