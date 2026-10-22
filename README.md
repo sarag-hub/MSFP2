@@ -1,6 +1,6 @@
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=DrPaulValle/MSF-IBF1020)
 
-# Práctica 5.4 — Sistema cardiovascular
+# Práctica 2: Sistema cardiovascular
 
 Repositorio académico de la asignatura **Modelado de Sistemas Fisiológicos**, correspondiente al programa de **Ingeniería Biomédica** del Tecnológico Nacional de México / Instituto Tecnológico de Tijuana. Esta práctica estudia el modelado matemático y la simulación del sistema cardiovascular mediante el modelo Windkessel de cuatro elementos, el análisis de estabilidad y error en estado estacionario, y el diseño de un controlador PID.
 
@@ -453,7 +453,7 @@ El programa debe incluir, como mínimo:
 2. Construcción de la función de transferencia.
 3. Cálculo de polos y ganancia estática.
 4. Generación o importación de la misma señal de entrada aleatoria.
-5. Simulación de la respuesta $P_p(t)$ en el intervalo de $0\) a \(15\ \mathrm{s}$.
+5. Simulación de la respuesta $P_p(t)$ en el intervalo de $0$ a $15\ \mathrm{s}$.
 6. Implementación del controlador PID, usando las ganancias obtenidas con Tune.
 7. Generación de gráficas comparativas y almacenamiento de los resultados.
 
