@@ -53,7 +53,7 @@ Se comparan los parámetros proporcionados para un paciente hipotenso, un indivi
 
 La práctica también requiere elaborar un diagrama biológico del sistema cardiovascular en BioRender y discutir cómo los cambios de los parámetros del modelo modifican la respuesta hemodinámica. Los resultados simulados deben distinguirse de las mediciones experimentales y de cualquier modificación realizada por el estudiante.
 
-**Palabras clave:** sistema cardiovascular; modelo Windkessel; impedancia característica; resistencia periférica; distensibilidad arterial; inertancia; función de transferencia; PID; MATLAB; Simulink; Python; Multisim; BioRender.
+**Palabras clave:** sistema cardiovascular; modelo Windkessel; impedancia característica; resistencia periférica; distensibilidad arterial; inertancia; función de transferencia; BioRender.
 
 [Volver al contenido](#contenido)
 
