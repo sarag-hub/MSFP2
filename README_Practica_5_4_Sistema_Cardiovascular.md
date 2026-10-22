@@ -73,13 +73,13 @@ Modelar y analizar el sistema cardiovascular mediante el modelo Windkessel de cu
 ### Objetivos específicos
 
 - Identificar la correspondencia entre las variables hemodinámicas y los elementos eléctricos $Z$, $L$, $R$ y $C$.
-- Obtener las ecuaciones diferenciales y la función de transferencia que relacionan $P_a(t)$ con $P_p(t).
+- Obtener las ecuaciones diferenciales y la función de transferencia que relacionan $P_a(t)$ con $P_p(t)$.
 - Determinar los polos, la estabilidad y el error en estado estacionario de la planta.
 - Comparar las respuestas correspondientes a hipotensión, normotensión e hipertensión con los parámetros de la práctica.
 - Generar la entrada aleatoria uniforme con la configuración especificada en el instructivo.
 - Construir el modelo mediante ecuaciones en Simulink y mediante el bloque **Transfer Fcn**.
 - Diseñar y sintonizar un controlador PID mediante **PID Controller** y **Tune**.
-- Comparar las respuestas en lazo abierto y lazo cerrado en el intervalo de \(0\) a \(15\ \mathrm{s}\).
+- Comparar las respuestas en lazo abierto y lazo cerrado en el intervalo de $0$ a $15\ \mathrm{s}$.
 - Reproducir los resultados en Python y Multisim, e interpretar las posibles diferencias.
 - Elaborar un diagrama biológico del sistema cardiovascular en BioRender y documentar los resultados.
 
