@@ -114,16 +114,16 @@ En esta práctica se emplea el modelo de cuatro elementos:
 
 | Símbolo | Elemento eléctrico | Interpretación cardiovascular |
 |---|---|---|
-| \(P_a(t)\) | Voltaje de entrada \(V_e(t)\) | Presión arterial aplicada al sistema |
-| \(P_p(t)\) | Voltaje de salida \(V_s(t)\) | Presión sobre la distensibilidad arterial |
-| \(F_a(t)\) | Corriente de entrada | Flujo sanguíneo de entrada |
-| \(F_L(t)\) | Corriente asociada a la inertancia | Flujo a través de la rama inductiva |
-| \(Z\) | Impedancia/resistencia característica | Impedancia característica proximal del lecho vascular |
-| \(R\) | Resistencia | Resistencia vascular periférica |
-| \(C\) | Capacitancia | Distensibilidad arterial total |
-| \(L\) | Inductancia | Inertancia arterial asociada a la masa de sangre |
+| $P_a(t)$ | Voltaje de entrada \(V_e(t)\) | Presión arterial aplicada al sistema |
+| $P_p(t)$ | Voltaje de salida \(V_s(t)\) | Presión sobre la distensibilidad arterial |
+| $F_a(t)$ | Corriente de entrada | Flujo sanguíneo de entrada |
+| $F_L(t)$ | Corriente asociada a la inertancia | Flujo a través de la rama inductiva |
+| $Z$ | Impedancia/resistencia característica | Impedancia característica proximal del lecho vascular |
+| $R$ | Resistencia | Resistencia vascular periférica |
+| $C$ | Capacitancia | Distensibilidad arterial total |
+| $L$ | Inductancia | Inertancia arterial asociada a la masa de sangre |
 
-La distensibilidad \(C\) representa la capacidad de las arterias de almacenar volumen ante un cambio de presión. La resistencia \(R\) representa la oposición al flujo sanguíneo, mientras que \(L\) modela el efecto inercial de la sangre. La impedancia \(Z\) representa la oposición característica del segmento vascular proximal.
+La distensibilidad $C$ representa la capacidad de las arterias de almacenar volumen ante un cambio de presión. La resistencia $R$ representa la oposición al flujo sanguíneo, mientras que $L$ modela el efecto inercial de la sangre. La impedancia $Z$ representa la oposición característica del segmento vascular proximal.
 
 **Nota de interpretación:** el circuito es una analogía matemática y eléctrica de la hemodinámica; los voltajes y corrientes de simulación no deben interpretarse directamente como presiones y flujos fisiológicos medidos sin definir los factores de escala.
 
@@ -140,10 +140,10 @@ El instructivo proporciona los siguientes parámetros para los tres escenarios. 
 
 | Parámetro | Hipotenso | Normotenso (control) | Hipertenso | Unidad |
 |---|---:|---:|---:|---|
-| $Z$ | 0.020 | 0.033 | 0.050 | \(\mathrm{mmHg\,s\,ml^{-1}}\) |
-| $C$ | 0.250 | 1.500 | 2.500 | \(\mathrm{ml\,mmHg^{-1}}\) |
-| $R$ | 0.600 | 0.950 | 1.400 | \(\mathrm{mmHg\,s\,ml^{-1}}\) |
-| $L$ | 0.005 | 0.010 | 0.020 | \(\mathrm{mmHg\,s^2\,ml^{-1}}\) |
+| $Z$ | 0.020 | 0.033 | 0.050 | $\mathrm{mmHg\,s\,ml^{-1}}$ |
+| $C$ | 0.250 | 1.500 | 2.500 | $\mahrm{ml\,mmHg^{-1}}$ |
+| $R$ | 0.600 | 0.950 | 1.400 | $\mathrm{mmHg\,s\,ml^{-1}}$ |
+| $L$ | 0.005 | 0.010 | 0.020 | $\mathrm{mmHg\,s^2\,ml^{-1}}$ |
 
 **Fuente de los parámetros:** Kind et al. (2010), citados en el instructivo de la asignatura.
 
