@@ -382,8 +382,8 @@ La práctica requiere representar el sistema cardiovascular mediante dos impleme
 
 Para cada escenario, el bloque debe configurarse con:
 
-- **Numerator:** `[R]`
-- **Denominator:** `[L*R*C, L + Z*R*C, Z + R]`
+- **Numerador:** `[R]`
+- **Denominador:** `[L*R*C, L + Z*R*C, Z + R]`
 
 Se pueden calcular previamente los coeficientes en MATLAB y asignarlos al bloque. Se debe verificar que el orden de los coeficientes coincida con las potencias descendentes de $s$.
 
