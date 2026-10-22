@@ -357,7 +357,7 @@ El instructivo solicita una entrada de tipo **Uniform Random Number** en Simulin
 | Maximum | $1\ \mathrm{V}$ |
 | Seed | $106$ |
 | Sample time | $0.5\ \mathrm{s}$ |
-| Intervalo de simulación | $0\) a \(15\ \mathrm{s}$ |
+| Intervalo de simulación | $0$ a $15\ \mathrm{s}$ |
 
 La entrada aleatoria permite observar cómo responde la presión $P_p(t)$ ante una señal variable. Para comparar los tres escenarios, se recomienda conservar la misma configuración de entrada y documentar la semilla utilizada.
 
