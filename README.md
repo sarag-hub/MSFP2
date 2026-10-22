@@ -657,11 +657,11 @@ La siguiente estructura es una propuesta para organizar los archivos de la prác
 
 1. Consultar el [repositorio general de la asignatura](https://github.com/DrPaulValle/MSF-IBF1020) y descargar los recursos correspondientes a la práctica.
 2. Revisar la topología del modelo Windkessel de cuatro elementos en la Figura 5.7 del instructivo.
-3. Introducir los parámetros \(Z\), \(C\), \(R\) y \(L\) de cada escenario.
+3. Introducir los parámetros $Z$, $C$, $R$ y $L$ de cada escenario.
 4. Obtener la función de transferencia y verificar los coeficientes del denominador.
 5. Construir el subsistema de ecuaciones y el bloque **Transfer Fcn** en Simulink.
-6. Configurar la entrada aleatoria: mínimo \(0.2\ \mathrm V\), máximo \(1\ \mathrm V\), semilla \(106\) y tiempo de muestreo \(0.5\ \mathrm s\).
-7. Simular en el intervalo de \(0\) a \(15\ \mathrm s\).
+6. Configurar la entrada aleatoria: mínimo $0.2\ \mathrm V$, máximo $1\ \mathrm V$, semilla $106$ y tiempo de muestreo $0.5\ \mathrm s$.
+7. Simular en el intervalo de $0$ a $15\ \mathrm s$.
 8. Calcular polos, ganancia estática y error estacionario.
 9. Construir el diagrama de control de la Figura 5.8 y sintonizar el PID.
 10. Reproducir los resultados en Python y contrastarlos con Simulink.
