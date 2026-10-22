@@ -4,7 +4,7 @@
 
 Repositorio académico de la asignatura **Modelado de Sistemas Fisiológicos**, correspondiente al programa de **Ingeniería Biomédica** del Tecnológico Nacional de México / Instituto Tecnológico de Tijuana. Esta práctica estudia el modelado matemático y la simulación del sistema cardiovascular mediante el modelo Windkessel de cuatro elementos, el análisis de estabilidad y error en estado estacionario, y el diseño de un controlador PID.
 
-El sistema se representa mediante una analogía eléctrica que contiene una impedancia característica \(Z\), una inertancia arterial \(L\), una resistencia periférica \(R\) y una distensibilidad arterial \(C\). Se analiza la presión sobre la distensibilidad arterial \(P_p(t)\) en respuesta a una presión arterial de entrada \(P_a(t)\), comparando tres condiciones: hipotensión, normotensión e hipertensión.
+El sistema se representa mediante una analogía eléctrica que contiene una impedancia característica $Z$, una inertancia arterial $L$, una resistencia periférica $R$ y una distensibilidad arterial $C$. Se analiza la presión sobre la distensibilidad arterial \(P_p(t)\) en respuesta a una presión arterial de entrada \(P_a(t)\), comparando tres condiciones: hipotensión, normotensión e hipertensión.
 
 **Docente:** Dr. Paul Antonio Valle Trujillo  
 **Correo:** [paul.valle@tectijuana.edu.mx](mailto:paul.valle@tectijuana.edu.mx)  
@@ -47,7 +47,7 @@ El sistema se representa mediante una analogía eléctrica que contiene una impe
 <a id="resumen"></a>
 ## Resumen
 
-La práctica tiene como propósito modelar y analizar el comportamiento dinámico del sistema cardiovascular mediante el **modelo Windkessel de cuatro elementos**. Este modelo concentra propiedades hemodinámicas relevantes en cuatro parámetros: impedancia característica $Z$, distensibilidad arterial \(C\), resistencia periférica \(R\) e inertancia arterial \(L\). La analogía eléctrica permite formular ecuaciones diferenciales y una función de transferencia para estudiar la presión \(P_p(t)\) sobre la distensibilidad arterial a partir de la presión de entrada \(P_a(t)\).
+La práctica tiene como propósito modelar y analizar el comportamiento dinámico del sistema cardiovascular mediante el **modelo Windkessel de cuatro elementos**. Este modelo concentra propiedades hemodinámicas relevantes en cuatro parámetros: impedancia característica $Z$, distensibilidad arterial $C$, resistencia periférica $R$ e inertancia arterial $L$. La analogía eléctrica permite formular ecuaciones diferenciales y una función de transferencia para estudiar la presión $P_p(t)$ sobre la distensibilidad arterial a partir de la presión de entrada $P_a(t)$.
 
 Se comparan los parámetros proporcionados para un paciente hipotenso, un individuo normotenso y un paciente hipertenso. La respuesta se estudia en el intervalo de \(0\) a \(15\ \mathrm{s}\), utilizando una entrada aleatoria uniforme en Simulink. Posteriormente se analiza el sistema en lazo abierto, se diseña un controlador PID mediante la herramienta **Tune** de Simulink y se contrastan los resultados computacionales en MATLAB/Simulink, Python y Multisim.
 
@@ -72,7 +72,7 @@ Modelar y analizar el sistema cardiovascular mediante el modelo Windkessel de cu
 
 ### Objetivos específicos
 
-- Identificar la correspondencia entre las variables hemodinámicas y los elementos eléctricos \(Z\), \(L\), \(R\) y \(C\).
+- Identificar la correspondencia entre las variables hemodinámicas y los elementos eléctricos $Z$, $L$, $R$ y $C$.
 - Obtener las ecuaciones diferenciales y la función de transferencia que relacionan \(P_a(t)\) con \(P_p(t)\).
 - Determinar los polos, la estabilidad y el error en estado estacionario de la planta.
 - Comparar las respuestas correspondientes a hipotensión, normotensión e hipertensión con los parámetros de la práctica.
@@ -140,10 +140,10 @@ El instructivo proporciona los siguientes parámetros para los tres escenarios. 
 
 | Parámetro | Hipotenso | Normotenso (control) | Hipertenso | Unidad |
 |---|---:|---:|---:|---|
-| \(Z\) | 0.020 | 0.033 | 0.050 | \(\mathrm{mmHg\,s\,ml^{-1}}\) |
-| \(C\) | 0.250 | 1.500 | 2.500 | \(\mathrm{ml\,mmHg^{-1}}\) |
-| \(R\) | 0.600 | 0.950 | 1.400 | \(\mathrm{mmHg\,s\,ml^{-1}}\) |
-| \(L\) | 0.005 | 0.010 | 0.020 | \(\mathrm{mmHg\,s^2\,ml^{-1}}\) |
+| $Z$ | 0.020 | 0.033 | 0.050 | \(\mathrm{mmHg\,s\,ml^{-1}}\) |
+| $C$ | 0.250 | 1.500 | 2.500 | \(\mathrm{ml\,mmHg^{-1}}\) |
+| $R$ | 0.600 | 0.950 | 1.400 | \(\mathrm{mmHg\,s\,ml^{-1}}\) |
+| $L$ | 0.005 | 0.010 | 0.020 | \(\mathrm{mmHg\,s^2\,ml^{-1}}\) |
 
 **Fuente de los parámetros:** Kind et al. (2010), citados en el instructivo de la asignatura.
 
