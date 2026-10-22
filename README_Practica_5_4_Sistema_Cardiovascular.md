@@ -4,7 +4,7 @@
 
 Repositorio académico de la asignatura **Modelado de Sistemas Fisiológicos**, correspondiente al programa de **Ingeniería Biomédica** del Tecnológico Nacional de México / Instituto Tecnológico de Tijuana. Esta práctica estudia el modelado matemático y la simulación del sistema cardiovascular mediante el modelo Windkessel de cuatro elementos, el análisis de estabilidad y error en estado estacionario, y el diseño de un controlador PID.
 
-El sistema se representa mediante una analogía eléctrica que contiene una impedancia característica $Z$, una inertancia arterial $L$, una resistencia periférica $R$ y una distensibilidad arterial $C$. Se analiza la presión sobre la distensibilidad arterial \(P_p(t)\) en respuesta a una presión arterial de entrada \(P_a(t)\), comparando tres condiciones: hipotensión, normotensión e hipertensión.
+El sistema se representa mediante una analogía eléctrica que contiene una impedancia característica $Z$, una inertancia arterial $L$, una resistencia periférica $R$ y una distensibilidad arterial $C$. Se analiza la presión sobre la distensibilidad arterial $P_p(t)$ en respuesta a una presión arterial de entrada $P_a(t)$, comparando tres condiciones: hipotensión, normotensión e hipertensión.
 
 **Docente:** Dr. Paul Antonio Valle Trujillo  
 **Correo:** [paul.valle@tectijuana.edu.mx](mailto:paul.valle@tectijuana.edu.mx)  
