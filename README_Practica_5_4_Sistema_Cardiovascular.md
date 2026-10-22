@@ -141,7 +141,7 @@ El instructivo proporciona los siguientes parámetros para los tres escenarios. 
 | Parámetro | Hipotenso | Normotenso (control) | Hipertenso | Unidad |
 |---|---:|---:|---:|---|
 | $Z$ | 0.020 | 0.033 | 0.050 | $\mathrm{mmHg\,s\,ml^{-1}}$ |
-| $C$ | 0.250 | 1.500 | 2.500 | $\mahrm{ml\,mmHg^{-1}}$ |
+| $C$ | 0.250 | 1.500 | 2.500 | $\mathrm{ml\,mmHg^{-1}}$ |
 | $R$ | 0.600 | 0.950 | 1.400 | $\mathrm{mmHg\,s\,ml^{-1}}$ |
 | $L$ | 0.005 | 0.010 | 0.020 | $\mathrm{mmHg\,s^2\,ml^{-1}}$ |
 
@@ -168,9 +168,9 @@ La interpretación debe basarse en la respuesta simulada y en los parámetros de
 
 Para la topología de referencia, la corriente que atraviesa la rama formada por la resistencia \(R\) y la capacitancia \(C\) en paralelo se expresa como:
 
-\[
+$$
 F_L(t)=F_R(t)+F_C(t)
-\]
+$$
 
 Las relaciones constitutivas de los elementos son:
 
