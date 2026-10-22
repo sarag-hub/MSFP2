@@ -47,7 +47,7 @@ El sistema se representa mediante una analogía eléctrica que contiene una impe
 <a id="resumen"></a>
 ## Resumen
 
-La práctica tiene como propósito modelar y analizar el comportamiento dinámico del sistema cardiovascular mediante el **modelo Windkessel de cuatro elementos**. Este modelo concentra propiedades hemodinámicas relevantes en cuatro parámetros: impedancia característica \(Z\), distensibilidad arterial \(C\), resistencia periférica \(R\) e inertancia arterial \(L\). La analogía eléctrica permite formular ecuaciones diferenciales y una función de transferencia para estudiar la presión \(P_p(t)\) sobre la distensibilidad arterial a partir de la presión de entrada \(P_a(t)\).
+La práctica tiene como propósito modelar y analizar el comportamiento dinámico del sistema cardiovascular mediante el **modelo Windkessel de cuatro elementos**. Este modelo concentra propiedades hemodinámicas relevantes en cuatro parámetros: impedancia característica $Z$, distensibilidad arterial \(C\), resistencia periférica \(R\) e inertancia arterial \(L\). La analogía eléctrica permite formular ecuaciones diferenciales y una función de transferencia para estudiar la presión \(P_p(t)\) sobre la distensibilidad arterial a partir de la presión de entrada \(P_a(t)\).
 
 Se comparan los parámetros proporcionados para un paciente hipotenso, un individuo normotenso y un paciente hipertenso. La respuesta se estudia en el intervalo de \(0\) a \(15\ \mathrm{s}\), utilizando una entrada aleatoria uniforme en Simulink. Posteriormente se analiza el sistema en lazo abierto, se diseña un controlador PID mediante la herramienta **Tune** de Simulink y se contrastan los resultados computacionales en MATLAB/Simulink, Python y Multisim.
 
