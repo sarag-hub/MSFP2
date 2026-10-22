@@ -114,8 +114,8 @@ En esta práctica se emplea el modelo de cuatro elementos:
 
 | Símbolo | Elemento eléctrico | Interpretación cardiovascular |
 |---|---|---|
-| $P_a(t)$ | Voltaje de entrada \(V_e(t)\) | Presión arterial aplicada al sistema |
-| $P_p(t)$ | Voltaje de salida \(V_s(t)\) | Presión sobre la distensibilidad arterial |
+| $P_a(t)$ | Voltaje de entrada $V_e(t)$ | Presión arterial aplicada al sistema |
+| $P_p(t)$ | Voltaje de salida $V_s(t)$ | Presión sobre la distensibilidad arterial |
 | $F_a(t)$ | Corriente de entrada | Flujo sanguíneo de entrada |
 | $F_L(t)$ | Corriente asociada a la inertancia | Flujo a través de la rama inductiva |
 | $Z$ | Impedancia/resistencia característica | Impedancia característica proximal del lecho vascular |
