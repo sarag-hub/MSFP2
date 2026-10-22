@@ -1,0 +1,27 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'Práctica 2: Sistema cardiovascular'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Sara
+    family-names: Gutiérrez Hernández
+    email: L23212734@tijuana.tecnm.mx
+    affiliation: TecNM / IT Tijuana
+repository-code: 'https://github.com/sarag-hub/MSFP2'
+keywords:
+  - sistema cardiovascular
+  - modelo Windkessel
+  - impedancia característica
+  - resistencia periférica.
+  - distensibilidad arterial
+  - inertancia
+  - función de transferencia
+  - BioRender
+license: BSD-2-Clause
+version: '1.0'
+date-released: '2026-10-21'
